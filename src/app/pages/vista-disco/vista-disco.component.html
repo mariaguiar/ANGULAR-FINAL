@@ -1,0 +1,15 @@
+<h3>Vista usuario</h3>
+
+Introduce el Id del disco que quieras ver <input #discoId> <br>
+<button type = "button" (click) = "mostrarDisco(discoId.value)">Mostrar</button>
+<hr>
+<div *ngIf= "disco!=null">
+   
+    <div *ngFor= "let d of disco" >
+        Nombre: {{d.titulo}} <br>
+        Interprete: {{d.interprete}} <br>
+        anyoPublicacion: {{d.anyoPublicacion}} <br>
+    </div>
+<hr>
+</div>
+

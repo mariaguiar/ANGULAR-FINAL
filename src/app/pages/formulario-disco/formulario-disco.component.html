@@ -1,0 +1,12 @@
+<h3>Formulario usuario</h3>
+
+    Id <input type= "text" #id/> <br>
+    Titulo <input type= "text" #titulo/> <br>
+    Interprete <input type= "text" #interprete/> <br>
+    Anyo Publicacion <input type= "text" #anyo/> <br>
+
+
+
+    <button type="button" (click)= "insertarDisco(titulo.value, interprete.value, anyo.value)">Insertar disco</button>
+    <button type="button" (click)= "eliminarDisco(id.value)">Borrar disco</button>
+    <button type="button" (click)= "editarDisco(id.value, titulo.value, interprete.value, anyo.value)">Modificar disco</button> 
